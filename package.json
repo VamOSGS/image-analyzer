@@ -5,6 +5,7 @@
   "license": "MIT",
   "description": "Simple Javascript library for analyzing images.",
   "scripts": {
+    "dev": "parcel ./testServer/index.html",
     "build": "babel ./src/index.js --out-file ./lib/index.js --plugins=@babel/plugin-transform-modules-umd --presets=@babel/preset-env"
   },
   "dependencies": {},
@@ -16,6 +17,7 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.12.0",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.14.0"
+    "eslint-plugin-import": "^2.14.0",
+    "parcel-bundler": "^1.11.0"
   }
 }
