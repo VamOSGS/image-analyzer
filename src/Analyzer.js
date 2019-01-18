@@ -9,6 +9,8 @@ export class Analyzer {
   }
 
   analyze() {
-    this.canvas.draw();
+    this.canvas.draw().then(() => {
+      this.canvas.getColors();
+    });
   }
 }
