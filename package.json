@@ -1,0 +1,21 @@
+{
+  "name": "image-analyzer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "description": "Simple Javascript library for analyzing images.",
+  "scripts": {
+    "build": "babel ./src/index.js --out-file ./lib/index.js --plugins=@babel/plugin-transform-modules-umd --presets=@babel/preset-env"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-transform-modules-umd": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.12.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
+}
