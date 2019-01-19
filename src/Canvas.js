@@ -1,4 +1,4 @@
-import { loadImage } from './utils';
+import { loadImage, rgbToHex } from './utils';
 
 export class Canvas {
   constructor(url) {
@@ -30,12 +30,22 @@ export class Canvas {
   }
 
   getColors() {
-    const { width, height } = this.canvas;
-    const stepSize = 5;
-    const rgb = { r: 0, g: 0, b: 0 };
+    const { height, width } = this.canvas;
     this.pixels = this.context.getImageData(0, 0, width, height);
+    const rgb = { r: 0, g: 0, b: 0 };
+    const pixelInterval = 5;
+    let count = 0;
+
     const { data } = this.pixels;
-    // Object.keys(rgb).map(i => (rgb[i] = Math.floor(rgb[i] / count)));
-    console.log(rgb);
+    for (let i = pixelInterval * 4; i < data.length; i += pixelInterval * 4) {
+      count++;
+      rgb.r += data[i];
+      rgb.g += data[i + 1];
+      rgb.b += data[i + 2];
+    }
+    rgb.r = Math.floor(rgb.r / count);
+    rgb.g = Math.floor(rgb.g / count);
+    rgb.b = Math.floor(rgb.b / count);
+    return [rgbToHex(rgb.r, rgb.g, rgb.b)];
   }
 }
