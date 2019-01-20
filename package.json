@@ -1,7 +1,7 @@
 {
   "name": "image-analyzer",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "0.1.0-beta.0",
+  "main": "./lib/index.js",
   "license": "MIT",
   "description": "Simple Javascript library for analyzing images.",
   "scripts": {
