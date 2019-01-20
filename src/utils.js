@@ -1,11 +1,11 @@
 export function loadImage(url) {
   return new Promise((resolve) => {
     const image = new Image();
+    image.src = url;
     image.addEventListener('load', () => {
       resolve(image);
     });
-    image.src = url;
-  }).catch(err => console.log(err));
+  }).catch(err => console.error(err));
 }
 
 export function rgbToHex(r, g, b) {
@@ -19,5 +19,5 @@ export function rgbToHex(r, g, b) {
   const red = rh(r);
   const green = rh(g);
   const blue = rh(b);
-  return red + green + blue;
+  return `#${red}${green}${blue}`;
 }

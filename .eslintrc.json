@@ -4,7 +4,9 @@
   "globals": {
     "document": true,
     "window": true,
-    "Image": true
+    "Image": true,
+    "fetch": true,
+    "FileReader": true
   },
   "rules": {
     "no-unused-vars": "warn",
