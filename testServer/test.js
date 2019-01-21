@@ -1,4 +1,4 @@
-import { Analyzer } from '../src';
+import { Analyzer } from '../lib/index';
 
 const url = document.querySelector('img').src;
 const analyzer = new Analyzer(url);
@@ -12,6 +12,6 @@ analyzer.analyze().then((colors) => {
     div.style.width = '50px';
     div.style.height = '50px';
     div.style.backgroundColor = `${color}`;
-    document.body.appendChild(div);
+    document.getElementById('colors').appendChild(div);
   });
 });

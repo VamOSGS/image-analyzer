@@ -1,6 +1,7 @@
 ## Image-analyzer
 
 #### Simple Javascript library for analyzing images.
+![Screenshot (Loved stack)](/rm/rm1.png)
 
 #### Install it with node:
 
@@ -22,7 +23,7 @@ yarn add react-preloaders --save
 
 #### Usage
 
-### ATTANTION IN THIS VERSION OF PACKAGE IMAGE NEED TO BE LOCAL
+### ATTENTION IN THIS VERSION OF PACKAGE IMAGE NEED TO BE LOCAL
 
 #### import in your js or link in html then use like this 
 
