@@ -1,7 +1,7 @@
 ## Image-analyzer
 
 #### Simple Javascript library for analyzing images.
-![Screenshot](./rm/rm1.png)
+![Screenshot](./testServer/testimage.png)
 
 #### Install it with node:
 
