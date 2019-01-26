@@ -3,13 +3,13 @@
 #### Install it with node:
 
 ```bash
-npm install react-preloaders --save
+npm install image-analyzer --save
 ```
 
 or
 
 ```bash
-yarn add react-preloaders --save
+yarn add image-analyzer --save
 ```
 
 #### or with link
